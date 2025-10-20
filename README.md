@@ -43,6 +43,9 @@
   docker build -t url-shortener .
   docker run -p 8080:8080 url-shortener
   ````
+
+---
+  
 ### 🔹 Part 3: Kubernetes + Helm
 
   - Helm-Chart im Verzeichnis helm/url-shortener
@@ -52,9 +55,11 @@
      - templates/deployment.yaml
      - templates/service.yaml
 
+  - Deployment per Helm
+     -  helm install url-shortener ./helm/url-shortener
 
-   - Deployment per Helm
-       -  helm install url-shortener ./helm/url-shortener
+---
+    
 ### 🔹 Part 4: CI/CD
 
    -  CI-Pipeline mit **GitHub Actions**
@@ -62,6 +67,7 @@
    -  Führt automatisch ./gradlew test aus
    -  Datei: .github/workflows/ci.yml
 
+---
 
 ###  🔗 Projektstruktur
 
@@ -78,6 +84,7 @@ url-shortener/
 │   └── workflows/   
 │       └── ci.yml   
 └── README.md   
-  
+
+---
 
   
